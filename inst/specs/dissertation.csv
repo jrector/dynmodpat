@@ -1,0 +1,96 @@
+plot_id,ana_prefix,exp_stub,model,x,fill,facet,max_y,func,height,width,title,data_for_plot,model_func,filter_func,predictor_str,lsm_str
+
+uni_a1v1_upright_dprime,NoBadTrials,uni_a1v1_upright,mlefit_uni_a1v1_upright_mDBNM,nstim_fac,block_condition,probe_is_mono_fac,5,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 1)",lsm_smry,,,,
+uni_a1v1_upright_criterion,NoBadTrials,uni_a1v1_upright,mlefit_uni_a1v1_upright_mDBNM,nstim_fac,block_condition,probe_is_mono_fac,1,plot_bias_by_block,2.75,10,"Bias (Exp 1)",lsm_smry,,,,
+uni_a1v1_upright_accuracy,NoBadTrials,uni_a1v1_upright,mlefit_uni_a1v1_upright_mDBNM,nstim_fac,block_condition,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 1)",accuracy_groups_all,,,,
+uni_a1v1_upright_recency_accuracy,NoBadTrials,uni_a1v1_upright,mlefit_uni_a1v1_upright_mDBNMRiNxR,nstim_fac,recency_fac,probe_is_mono_fac|block_condition,1,plot_accuracy_by_block,5.5,10,"Recency effect (Exp 1)",accuracy_groups_all,nosig_mD_mle,filter_recency_only,block_condition + nstim_fac + probe_is_mono_fac + recency_fac,~ block_condition + nstim_fac + probe_is_mono_fac | recency_fac
+
+uni_a1v1_rev1_dprime,NoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mDBNMiBxN,nstim_fac,block_condition,probe_is_mono_fac,5,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 2)",lsm_smry,,,,
+uni_a1v1_rev1_criterion,NoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mDBNMiBxN,nstim_fac,block_condition,probe_is_mono_fac,1,plot_bias_by_block,2.75,10,"Bias (Exp 2)",lsm_smry,,,,
+uni_a1v1_rev1_accuracy,NoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mDBNMiBxN,nstim_fac,block_condition,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 2)",accuracy_groups_all,,,,
+uni_a1v1_rev1_recency_accuracy,NoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mDBNMRiBxNiNxR,nstim_fac,recency_fac,probe_is_mono_fac|block_condition,1,plot_accuracy_by_block,5.5,10,"Recency effect (Exp 2)",accuracy_groups_all,nosig_mD_mle,filter_recency_only,block_condition + nstim_fac + probe_is_mono_fac + recency_fac,~ block_condition + nstim_fac + probe_is_mono_fac | recency_fac
+
+uni_a1v1_iden_dprime,NoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mDBNMiBxN,nstim_fac,block_condition,probe_is_mono_fac,5,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 3)",lsm_smry,,,,
+uni_a1v1_iden_criterion,NoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mDBNMiBxN,nstim_fac,block_condition,probe_is_mono_fac,1,plot_bias_by_block,2.75,10,"Bias (Exp 3)",lsm_smry,,,,
+uni_a1v1_iden_accuracy,NoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mDBNMiBxN,nstim_fac,block_condition,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 3)",accuracy_groups_all,,,,
+uni_a1v1_iden_recency_accuracy,NoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mDBNMRiBxNiNxR,nstim_fac,recency_fac,probe_is_mono_fac|block_condition,1,plot_accuracy_by_block,5.5,10,"Recency effect (Exp 3)",accuracy_groups_all,nosig_mD_mle,filter_recency_only,block_condition + nstim_fac + probe_is_mono_fac + recency_fac,~ block_condition + nstim_fac + probe_is_mono_fac | recency_fac
+
+uni_a1v1_combined_dprime,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPiBxNiBxP,nstim_fac,block_condition,probe_is_mono_fac|probe_transform,5,plot_dprime_by_block,5.5,10,"Sensitivity, pitch and size",lsm_smry,,,,
+uni_a1v1_combined_criterion,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPiBxNiBxP,nstim_fac,block_condition,probe_is_mono_fac|probe_transform,1,plot_bias_by_block,5.5,10,"Bias, pitch and size",lsm_smry,,,,
+uni_a1v1_combined_recency_accuracy_UNUSED,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPRiBxNiBxPiNxR,nstim_fac,recency_fac,probe_is_mono_fac|block_condition|probe_transform,1,plot_accuracy_by_block,5.5,10,"Recency effect, pitch and size",accuracy_groups_all,nosig_mD_mle,filter_recency_only,block_condition + nstim_fac + probe_is_mono_fac + probe_transform + recency_fac,~ block_condition + nstim_fac + probe_is_mono_fac +probe_transform | recency_fac
+
+uni_a2v2_dprime,NoBadTrials,uni_a2v2,mlefit_uni_a2v2_mDBNM,nstim_fac,block_condition,probe_is_mono_fac,5,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 4)",lsm_smry,,,,
+uni_a2v2_criterion,NoBadTrials,uni_a2v2,mlefit_uni_a2v2_mDBNM,nstim_fac,block_condition,probe_is_mono_fac,1,plot_bias_by_block,2.75,10,"Bias (Exp 4)",lsm_smry,,,,
+uni_a2v2_accuracy,NoBadTrials,uni_a2v2,mlefit_uni_a2v2_mDBNM,nstim_fac,block_condition,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 4)",accuracy_groups_all,,,,
+uni_a2v2_recency_accuracy,NoBadTrials,uni_a2v2,mlefit_uni_a2v2_mDBNMRiNxR,nstim_fac,recency_fac,probe_is_mono_fac|block_condition,1,plot_accuracy_by_block,5.5,10,"Recency effect (Exp 4)",accuracy_groups_all,nosig_mD_mle,filter_recency_only,block_condition + nstim_fac + probe_is_mono_fac + recency_fac,~ block_condition + nstim_fac + probe_is_mono_fac | recency_fac
+
+multi1_a1v1_dprime,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,stream_type,block_condition,probe_is_mono_fac,4,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 5)",lsm_smry,,,,
+multi1_a1v1_criterion,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,stream_type,block_condition,probe_is_mono_fac,1,plot_bias_by_block,2.75,10,"Bias (Exp 5)",lsm_smry,,,,
+multi1_a1v1_accuracy,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,stream_type,block_condition,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 5)",accuracy_groups_all,,,,
+
+multi2_a1v1_dprime,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,stream_type,block_condition,probe_is_mono_fac,4,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 6)",lsm_smry,,,,
+multi2_a1v1_criterion,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,stream_type,block_condition,probe_is_mono_fac,1,plot_bias_by_block,2.75,10,"Bias (Exp 6)",lsm_smry,,,,
+multi2_a1v1_accuracy,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,stream_type,block_condition,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 6)",accuracy_groups_all,,,,
+multi2_a1v1_recency_accuracy,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMRiBxSiBxM,stream_type,recency_fac,probe_is_mono_fac|block_condition,1,plot_accuracy_by_block,5.5,10,"Recency effect (Exp 6)",accuracy_groups_all,nosig_mD_mle,filter_recency_only,block_condition + stream_type + probe_is_mono_fac + recency_fac,~ block_condition + stream_type + probe_is_mono_fac | recency_fac
+
+multi2_a2v2_dprime,NoBadTrials,multi2_a2v2,mlefit_multi2_a2v2_mDSM,stream_type,stream_type,probe_is_mono_fac,4,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 7)",lsm_smry,,,,
+multi2_a2v2_criterion,NoBadTrials,multi2_a2v2,mlefit_multi2_a2v2_mDSM,stream_type,stream_type,probe_is_mono_fac,1,plot_bias_by_block,2.75,10,"Bias (Exp 7)",lsm_smry,,,,
+multi2_a2v2_accuracy,NoBadTrials,multi2_a2v2,mlefit_multi2_a2v2_mDSM,stream_type,stream_type,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 7)",accuracy_groups_all,,,,
+multi2_a2v2_recency_accuracy,NoBadTrials,multi2_a2v2,mlefit_multi2_a2v2_mDSMR,stream_type,recency_fac,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Recency effect (Exp 7)",accuracy_groups_all,nosig_mD_mle,filter_recency_only,stream_type + probe_is_mono_fac + recency_fac,~ stream_type + probe_is_mono_fac | recency_fac
+
+
+acuity_2ifcexp1_dprime,Acuity,acuity_2ifcexp1,mlefit_acuity_2ifcexp1_mTF,block_first_stim,block_first_stim,,-0.5|2.5,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 8)",lsm_smry,,,,
+acuity_2ifcexp1_criterion,Acuity,acuity_2ifcexp1,mlefit_acuity_2ifcexp1_mTF,block_first_stim,block_first_stim,,1,plot_bias_by_block,2.75,10,"Bias (Exp 8)",lsm_smry,,,,
+acuity_2ifcexp1_accuracy,Acuity,acuity_2ifcexp1,mlefit_acuity_2ifcexp1_mTF,block_first_stim,block_first_stim,,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 8)",accuracy_groups_all,,,,
+acuity_2ifcexp1_density,Acuity,acuity_2ifcexp1,mlefit_acuity_2ifcexp1_mTF,,block_first_stim,,5,plot_accuracy_density,2.75,10,"Accuracy density (Exp 8)",lsm_smry,,,,
+
+acuity_2ifcexp2_dprime,Acuity,acuity_2ifcexp2,mlefit_acuity_2ifcexp2_mTF,block_first_stim,block_first_stim,,-0.5|2.5,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 9)",lsm_smry,,,,
+acuity_2ifcexp2_criterion,Acuity,acuity_2ifcexp2,mlefit_acuity_2ifcexp2_mTF,block_first_stim,block_first_stim,,1,plot_bias_by_block,2.75,10,"Bias (Exp 9)",lsm_smry,,,,
+acuity_2ifcexp2_accuracy,Acuity,acuity_2ifcexp2,mlefit_acuity_2ifcexp2_mTF,block_first_stim,block_first_stim,,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 9)",accuracy_groups_all,,,,
+acuity_2ifcexp2_density,Acuity,acuity_2ifcexp2,mlefit_acuity_2ifcexp2_mTF,,block_first_stim,,5,plot_accuracy_density,2.75,10,"Accuracy density (Exp 9)",lsm_smry,,,,
+
+acuity_iden1_dprime,Acuity,acuity_iden1,mlefit_acuity_iden1_mTF,block_first_stim,block_first_stim,,-0.5|2.5,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 10)",lsm_smry,,,,
+acuity_iden1_criterion,Acuity,acuity_iden1,mlefit_acuity_iden1_mTF,block_first_stim,block_first_stim,,1,plot_bias_by_block,2.75,10,"Bias (Exp 10)",lsm_smry,,,,
+acuity_iden1_accuracy,Acuity,acuity_iden1,mlefit_acuity_iden1_mTF,block_first_stim,block_first_stim,,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 10)",accuracy_groups_all,,,,
+acuity_iden_density,Acuity,acuity_iden1,mlefit_acuity_iden1_mTF,,block_first_stim,,5,plot_accuracy_density,2.75,10,"Accuracy density (Exp 10)",lsm_smry,,,,
+
+acuity_withinshape1_dprime,Acuity,acuity_withinshape1,mlefit_acuity_withinshape1_mTFPiFxTiFxP,block_first_stim,probe_transform,,-0.5|2.5,plot_dprime_by_block,2.75,10,"Sensitivity",lsm_smry,,,,
+acuity_withinshape1_criterion,Acuity,acuity_withinshape1,mlefit_acuity_withinshape1_mTFPiFxTiFxP,block_first_stim,probe_transform,,1,plot_bias_by_block,2.75,10,"Bias",lsm_smry,,,,
+acuity_withinshape1_accuracy,Acuity,acuity_withinshape1,mlefit_acuity_withinshape1_mTFPiFxTiFxP,block_first_stim,probe_transform,,1,plot_accuracy_by_block,2.75,10,"Accuracy",accuracy_groups_all,,,,
+
+acuity_acrossshape1_dprime,Acuity,acuity_acrossshape1,mlefit_acuity_acrossshape1_mB,block_condition,block_condition,,5,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 11)",lsm_smry,,,,
+acuity_acrossshape1_criterion,Acuity,acuity_acrossshape1,mlefit_acuity_acrossshape1_mB,block_condition,block_condition,,1,plot_bias_by_block,2.75,10,"Bias (Exp 11)",lsm_smry,,,,
+acuity_acrossshape1_accuracy,Acuity,acuity_acrossshape1,mlefit_acuity_acrossshape1_mB,block_condition,block_condition,,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 11)",accuracy_groups_all,,,,
+acuity_acrossshape1_density,Acuity,acuity_acrossshape1,mlefit_acuity_acrossshape1_mB,,block_condition,,10,plot_accuracy_density,2.75,10,"Accuracy density (Exp 11)",lsm_smry,,,,
+
+uni_a1v1_upright_dprime,AltSigvarNoBadTrials,uni_a1v1_upright,mlefit_uni_a1v1_upright_mBNM,nstim_fac,block_condition,probe_is_mono_fac,5,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 1)",lsm_smry,,,,
+uni_a1v1_upright_criterion,AltSigvarNoBadTrials,uni_a1v1_upright,mlefit_uni_a1v1_upright_mBNM,nstim_fac,block_condition,probe_is_mono_fac,1,plot_bias_by_block,2.75,10,"Bias (Exp 1)",lsm_smry,,,,
+uni_a1v1_upright_accuracy,AltSigvarNoBadTrials,uni_a1v1_upright,mlefit_uni_a1v1_upright_mBNM,nstim_fac,block_condition,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 1)",accuracy_groups_all,,,,
+
+uni_a1v1_rev1_dprime,AltSigvarNoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mBNMiBxN,nstim_fac,block_condition,probe_is_mono_fac,5,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 2)",lsm_smry,,,,
+uni_a1v1_rev1_criterion,AltSigvarNoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mBNMiBxN,nstim_fac,block_condition,probe_is_mono_fac,1,plot_bias_by_block,2.75,10,"Bias (Exp 2)",lsm_smry,,,,
+uni_a1v1_rev1_accuracy,AltSigvarNoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mBNMiBxN,nstim_fac,block_condition,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 2)",accuracy_groups_all,,,,
+
+uni_a1v1_iden_dprime,AltSigvarNoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mBNMiBxN,nstim_fac,block_condition,probe_is_mono_fac,5,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 3)",lsm_smry,,,,
+uni_a1v1_iden_criterion,AltSigvarNoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mBNMiBxN,nstim_fac,block_condition,probe_is_mono_fac,1,plot_bias_by_block,2.75,10,"Bias (Exp 3)",lsm_smry,,,,
+uni_a1v1_iden_accuracy,AltSigvarNoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mBNMiBxN,nstim_fac,block_condition,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 3)",accuracy_groups_all,,,,
+
+uni_a1v1_combined_dprime,AltSigvarNoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mBNMPiBxNiBxP,nstim_fac,block_condition,probe_transform|probe_is_mono_fac,5,plot_dprime_by_block,5.5,10,"Sensitivity, pitch and size",lsm_smry,,,,
+uni_a1v1_combined_criterion,AltSigvarNoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mBNMPiBxNiBxP,nstim_fac,block_condition,probe_transform|probe_is_mono_fac,1,plot_bias_by_block,5.5,10,"Bias, pitch and size",lsm_smry,,,,
+
+uni_a2v2_dprime,AltSigvarNoBadTrials,uni_a2v2,mlefit_uni_a2v2_mBNM,nstim_fac,block_condition,probe_is_mono_fac,5,plot_dprime_by_block,2.75,10,"Sensitivity (Exp 4)",lsm_smry,,,,
+uni_a2v2_criterion,AltSigvarNoBadTrials,uni_a2v2,mlefit_uni_a2v2_mBNM,nstim_fac,block_condition,probe_is_mono_fac,1,plot_bias_by_block,2.75,10,"Bias (Exp 4)",lsm_smry,,,,
+uni_a2v2_accuracy,AltSigvarNoBadTrials,uni_a2v2,mlefit_uni_a2v2_mBNM,nstim_fac,block_condition,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Accuracy (Exp 4)",accuracy_groups_all,,,,
+
+multi1_a1v1_dprime,AltSigvarNoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mBSMiBxSiBxM,stream_type,block_condition,probe_is_mono_fac,4,plot_dprime_by_block,2.75,10,"Sensitivity by condition, List Length 1",lsm_smry,,,,
+multi1_a1v1_criterion,AltSigvarNoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mBSMiBxSiBxM,stream_type,block_condition,probe_is_mono_fac,1,plot_bias_by_block,2.75,10,"Bias by condition, List Length 1",lsm_smry,,,,
+multi1_a1v1_accuracy,AltSigvarNoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mBSMiBxSiBxM,stream_type,block_condition,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Accuracy by condition, List Length 1",accuracy_groups_all,,,,
+
+multi2_a1v1_dprime,AltSigvarNoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mBSMiBxSiBxM,stream_type,block_condition,probe_is_mono_fac,4,plot_dprime_by_block,2.75,10,"Sensitivity by condition, List Length 2",lsm_smry,,,,
+multi2_a1v1_criterion,AltSigvarNoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mBSMiBxSiBxM,stream_type,block_condition,probe_is_mono_fac,1,plot_bias_by_block,2.75,10,"Bias by condition, List Length 2",lsm_smry,,,,
+multi2_a1v1_accuracy,AltSigvarNoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mBSMiBxSiBxM,stream_type,block_condition,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Accuracy by condition, List Length 2",accuracy_groups_all,,,,
+
+multi2_a2v2_dprime,AltSigvarNoBadTrials,multi2_a2v2,mlefit_multi2_a2v2_mSM,stream_type,stream_type,probe_is_mono_fac,4,plot_dprime_by_block,2.75,10,"Sensitivity by condition, List Length 2",lsm_smry,,,,
+multi2_a2v2_criterion,AltSigvarNoBadTrials,multi2_a2v2,mlefit_multi2_a2v2_mSM,stream_type,stream_type,probe_is_mono_fac,1,plot_bias_by_block,2.75,10,"Bias by condition, List Length 2",lsm_smry,,,,
+multi2_a2v2_accuracy,AltSigvarNoBadTrials,multi2_a2v2,mlefit_multi2_a2v2_mSM,stream_type,stream_type,probe_is_mono_fac,1,plot_accuracy_by_block,2.75,10,"Accuracy by condition, List Length 2",accuracy_groups_all,,,,
+

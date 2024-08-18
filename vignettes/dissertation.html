@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Jeff Rector" />
+
+<meta name="date" content="2018-07-29" />
+
+<title>Quick Guide</title>
+
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#header {
+text-align: center;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Quick Guide</h1>
+<h4 class="author"><em>Jeff Rector</em></h4>
+<h4 class="date"><em>2018-07-29</em></h4>
+
+
+
+<div id="quick-guide-to-the-analysis-code" class="section level1">
+<h1>Quick Guide to the Analysis Code</h1>
+<p>Usage of the analysis code will be illustrated with some simple examples and descriptions of the functions.</p>
+<p>In the following examples, we will assume you have an object in your workspace named <code>wm_trials</code>. This is a list of data frames, where each data frame contains trial-level data.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># wm_trials is a list of data frames</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">typeof</span>(wm_trials)</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="co">#&gt; [1] &quot;list&quot;</span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="kw">sapply</span>(wm_trials, class)</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="co">#&gt;  uni_a1v1_upright     uni_a1v1_rev1     uni_a1v1_iden          uni_a2v2 </span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="co">#&gt;      &quot;data.frame&quot;      &quot;data.frame&quot;      &quot;data.frame&quot;      &quot;data.frame&quot; </span></a>
+<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="co">#&gt;       multi1_a1v1       multi2_a1v1       multi2_a2v2 uni_a1v1_combined </span></a>
+<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="co">#&gt;      &quot;data.frame&quot;      &quot;data.frame&quot;      &quot;data.frame&quot;      &quot;data.frame&quot; </span></a>
+<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="co">#&gt; a1v1_combo_v1only </span></a>
+<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="co">#&gt;      &quot;data.frame&quot;</span></a>
+<a class="sourceLine" id="cb1-11" data-line-number="11"></a>
+<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="co"># each data frame has an experiment name or other analysis identifier</span></a>
+<a class="sourceLine" id="cb1-13" data-line-number="13"><span class="co"># associated with it</span></a>
+<a class="sourceLine" id="cb1-14" data-line-number="14"><span class="kw">names</span>(wm_trials)</a>
+<a class="sourceLine" id="cb1-15" data-line-number="15"><span class="co">#&gt; [1] &quot;uni_a1v1_upright&quot;  &quot;uni_a1v1_rev1&quot;     &quot;uni_a1v1_iden&quot;    </span></a>
+<a class="sourceLine" id="cb1-16" data-line-number="16"><span class="co">#&gt; [4] &quot;uni_a2v2&quot;          &quot;multi1_a1v1&quot;       &quot;multi2_a1v1&quot;      </span></a>
+<a class="sourceLine" id="cb1-17" data-line-number="17"><span class="co">#&gt; [7] &quot;multi2_a2v2&quot;       &quot;uni_a1v1_combined&quot; &quot;a1v1_combo_v1only&quot;</span></a></code></pre></div>
+<p>The top-level function that starts off an analysis is <code>process_experiments()</code>. This will produce a full analysis of the requested experiment data. The function returns a list of analyses, one for each of the supplied experiment identifers. It also produces several output files on disk, including cache files containing analysis results, summary reports, and plots.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">fits &lt;-<span class="st"> </span><span class="kw">process_experiments</span>(<span class="dt">experiment_stubs =</span> <span class="kw">names</span>(wm_trials),</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">                             <span class="dt">data_by_stub =</span> wm_trials,</a>
+<a class="sourceLine" id="cb2-3" data-line-number="3">                             <span class="dt">project_root =</span> <span class="kw">getwd</span>(),</a>
+<a class="sourceLine" id="cb2-4" data-line-number="4">                             <span class="dt">filter_f =</span> filter_no_bad_trials,</a>
+<a class="sourceLine" id="cb2-5" data-line-number="5">                             <span class="dt">analysis_prefix =</span> <span class="st">&quot;NoBadTrials&quot;</span>,</a>
+<a class="sourceLine" id="cb2-6" data-line-number="6">                             <span class="dt">fit_mle =</span> <span class="ot">TRUE</span></a>
+<a class="sourceLine" id="cb2-7" data-line-number="7">                             )</a></code></pre></div>
+<p>Key parameters:</p>
+<ul>
+<li><code>experiment_stubs</code>: vector of experiment identifiers to process. In the example above, all of the identifiers provided in <code>wm_trials</code> will be processed.</li>
+<li><code>data_by_stub</code>: list of data frames, where the name of each data frame corresponds to an experiment identifier</li>
+<li><code>project_root</code>: directory to use</li>
+<li><code>filter_f</code>: optional filtering function used to subset the data</li>
+<li><code>analysis_prefix</code>: string used to name the analysis. Output files such as plots and reports will include this analysis identifier in their names.</li>
+<li><code>fit_mle</code>: logical indicating whether models should be fit with Maximum Likelihood. This is true by default. Earlier versions of this code also supported fitting Bayesian models using Stan, but this has been removed from the current version for simplicity.</li>
+</ul>
+<p>In the example above, an analysis will be performed that processes all of the data frames available in <code>wm_trials</code>. In the dissertation, I filtered out any trial that was marked as a “bad trial” by the experimenter. The example above reflects this filtering. We name the analysis “NoBadTrials” and pass in a filtering function that drops any trials that were flagged.</p>
+<div id="analysis-of-an-experiment" class="section level2">
+<h2>Analysis of an experiment</h2>
+<p>The <code>fit_model_sequence()</code> function takes the data from an experiment and performs a series of steps to fit any relevant models to the data. This is a very large function that includes an explicit listing of each model to consider. The model list could be abstracted out, but I left it here to clearly capture the list of candidate models that were considered for the dissertation analysis.</p>
+<p>The general process is that first a base model is fit that includes any predictors that will be present in all subsequent models. A sequence of candidate models are then considered. Some logic is included here to determine whether a particular candidate model is appropriate for the supplied data set. For example, some of the models contain a predictor named <code>block_condition</code>. This predictor indicates whether the relevant modality for the trial is audition or vision. If the data includes trials with different values for <code>block_condition</code>, then candidates models containing this predictor are considered. If the data set contained only one value for <code>block_condition</code>, then any models with this predictor are excluded. This type of logic is used to determine which models will be fit to the supplied experiment data.</p>
+<p>The various predictors have been assigned abbreviations, and I have included a simple domain specific language to specify models using these abbreviations. Here are the first few rows of the data frame that defines the various predictor values.</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="left">abbrev</th>
+<th align="left">predictor</th>
+<th align="left">friendly_name</th>
+<th align="left">interaction_relevant</th>
+<th align="left">nested_within_sigvar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>B</td>
+<td align="left">B</td>
+<td align="left">block_condition</td>
+<td align="left">Modality</td>
+<td align="left">TRUE</td>
+<td align="left">FALSE</td>
+</tr>
+<tr class="even">
+<td>N</td>
+<td align="left">N</td>
+<td align="left">nstim_fac</td>
+<td align="left">ListLength</td>
+<td align="left">TRUE</td>
+<td align="left">FALSE</td>
+</tr>
+<tr class="odd">
+<td>S</td>
+<td align="left">S</td>
+<td align="left">stream_type</td>
+<td align="left">PresentationType</td>
+<td align="left">TRUE</td>
+<td align="left">FALSE</td>
+</tr>
+<tr class="even">
+<td>M</td>
+<td align="left">M</td>
+<td align="left">probe_is_mono_fac</td>
+<td align="left">ProbeType</td>
+<td align="left">TRUE</td>
+<td align="left">FALSE</td>
+</tr>
+<tr class="odd">
+<td>R</td>
+<td align="left">R</td>
+<td align="left">recency_fac</td>
+<td align="left">Recency</td>
+<td align="left">FALSE</td>
+<td align="left">TRUE</td>
+</tr>
+<tr class="even">
+<td>T</td>
+<td align="left">T</td>
+<td align="left">avg_time_difference_z</td>
+<td align="left">TimeDelta</td>
+<td align="left">TRUE</td>
+<td align="left">FALSE</td>
+</tr>
+</tbody>
+</table>
+<p>You can see from this table that the <code>block_condition</code> predictor has abbreviation “B” and that in reports, it will be listed as “Modality” (i.e. the “friendly_name”). The language to specify models can be illustrated with an example:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">fit_info &lt;-<span class="st"> </span><span class="kw">func_fit_abbrev</span>(</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">  <span class="dt">model_abbrev=</span><span class="st">&quot;BNMiBxN&quot;</span>, <span class="dt">model_flags=</span>(incl_B <span class="op">&amp;</span><span class="st"> </span>incl_N <span class="op">&amp;</span><span class="st"> </span>incl_M)</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3">  )</a></code></pre></div>
+<p>In that example, we pass in logical flags to indicate that this model should only be fit if the predictors with abbreviations B, N, and M are relevant. Here the model abbreviation is “BNMiBxN”. This describes a model with main effects for the B, N, and M predictors, and a 2-way interaction (“iBxN”) between the B and N predictors.</p>
+<p>The model abbreviation string can be expanded into a string of predictors in syntax suitable for <code>lme4::glmer</code>. I won’t go in to the details here (see Appendix A of the dissertation), but the models are parameterized for Signal Detection Theory. They require a predictor that separates signal and noise trials, which I refer to as the “signal variable”. In the example below, the signal variable is “is_old”.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2">model_abbrev &lt;-<span class="st"> &quot;BNMiBxN&quot;</span></a>
+<a class="sourceLine" id="cb4-3" data-line-number="3">signal_var &lt;-<span class="st"> &quot;is_old&quot;</span></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="co"># build formula string with the predictors to append to base model</span></a>
+<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="kw">build_formula_suffix_from_abbrev</span>(<span class="dt">abbrev_str=</span>model_abbrev, <span class="dt">signal_var=</span>signal_var)</a>
+<a class="sourceLine" id="cb4-6" data-line-number="6"><span class="co">#&gt; [1] &quot;block_condition + block_condition:is_old + nstim_fac + nstim_fac:is_old + probe_is_mono_fac + probe_is_mono_fac:is_old + block_condition:nstim_fac + block_condition:nstim_fac:is_old&quot;</span></a>
+<a class="sourceLine" id="cb4-7" data-line-number="7"></a>
+<a class="sourceLine" id="cb4-8" data-line-number="8"><span class="co"># additional examples</span></a>
+<a class="sourceLine" id="cb4-9" data-line-number="9"><span class="kw">build_formula_suffix_from_abbrev</span>(<span class="dt">abbrev_str=</span><span class="st">&quot;BSN&quot;</span>, <span class="dt">signal_var=</span>signal_var)</a>
+<a class="sourceLine" id="cb4-10" data-line-number="10"><span class="co">#&gt; [1] &quot;block_condition + block_condition:is_old + nstim_fac + nstim_fac:is_old + stream_type + stream_type:is_old&quot;</span></a>
+<a class="sourceLine" id="cb4-11" data-line-number="11"><span class="kw">build_formula_suffix_from_abbrev</span>(<span class="dt">abbrev_str=</span><span class="st">&quot;BSNiBxNiBxS&quot;</span>, <span class="dt">signal_var=</span><span class="st">&quot;x&quot;</span>)</a>
+<a class="sourceLine" id="cb4-12" data-line-number="12"><span class="co">#&gt; [1] &quot;block_condition + block_condition:x + nstim_fac + nstim_fac:x + stream_type + stream_type:x + block_condition:nstim_fac + block_condition:nstim_fac:x + block_condition:stream_type + block_condition:stream_type:x&quot;</span></a></code></pre></div>
+<p>The resulting formula string can be added to the formula string for the base model. This process is used to build new models from the base model.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="co"># build complete formula string</span></a>
+<a class="sourceLine" id="cb5-2" data-line-number="2">formula_str &lt;-<span class="st"> </span><span class="kw">append_formula_from_abbrev</span>(<span class="dt">existing_fit=</span>base_fit, <span class="dt">formula_suffix=</span>formula_suffix)</a></code></pre></div>
+<div id="analysis-output" class="section level3">
+<h3>Analysis output</h3>
+<p>The output of the analysis is stored in subdirectories of the <code>project_root</code>. A “cache” directory contains RDS files with all of the fitted models and output from a routine that bootstraps confidence intervals for selected models. The “reports” directory contains text files with various summary reports, and the “plots” directory contains PDF files of various summary figures. The specific plots to produce can be specified with a CSV file (an example will be included in a future release).</p>
+</div>
+<div id="conclusion" class="section level3">
+<h3>Conclusion</h3>
+<p>This quick guide just scratches the surface of the analysis pipeline, but hopefully provides a starting point to explore the code.</p>
+</div>
+<div id="note-about-the-experiment-data" class="section level3">
+<h3>Note about the experiment data</h3>
+<p>The initial public release of this R package contains the minimal set of data necessary to reproduce the reported analyses.</p>
+</div>
+</div>
+</div>
+
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

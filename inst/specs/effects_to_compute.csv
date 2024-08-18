@@ -1,0 +1,141 @@
+effect_id,ana_prefix,exp_stub,model,minuend,subtrahend,title
+multi1_a1v1_iBxS_A_sync_async,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortAa1v1,sync","d_interact::block_condition__stream_type::avShortAa1v1,async",Aud sync minus async
+multi1_a1v1_iBxS_A_sync_uni,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortAa1v1,sync","d_interact::block_condition__stream_type::avShortAa1v1,unimodal",Aud sync minus uni
+multi1_a1v1_iBxS_A_sync_uni,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortAa1v1,async","d_interact::block_condition__stream_type::avShortAa1v1,unimodal",Aud async minus uni
+multi1_a1v1_iBxS_V_sync_async,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortVa1v1,sync","d_interact::block_condition__stream_type::avShortVa1v1,async",Vis sync minus async
+multi1_a1v1_iBxS_V_sync_uni,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortVa1v1,sync","d_interact::block_condition__stream_type::avShortVa1v1,unimodal",Vis sync minus uni
+multi1_a1v1_iBxS_V_sync_uni,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortVa1v1,async","d_interact::block_condition__stream_type::avShortVa1v1,unimodal",Vis async minus uni
+multi1_a1v1_iBxS_AV_async,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortAa1v1,async","d_interact::block_condition__stream_type::avShortVa1v1,async",async A - V
+multi1_a1v1_iBxS_AV_sync,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortAa1v1,sync","d_interact::block_condition__stream_type::avShortVa1v1,sync",sync A - V
+multi1_a1v1_iBxS_AV_uni,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortAa1v1,unimodal","d_interact::block_condition__stream_type::avShortVa1v1,unimodal",unimodal A - V
+
+multi1_a1v1_iBxM_A_nonmono_mono,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__probe_is_mono_fac::avShortAa1v1,Nonmono","d_interact::block_condition__probe_is_mono_fac::avShortAa1v1,Mono",Aud Nonmono minus Mono
+multi1_a1v1_iBxM_V_nonmono_mono,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__probe_is_mono_fac::avShortVa1v1,Nonmono","d_interact::block_condition__probe_is_mono_fac::avShortVa1v1,Mono",Vis Nonmono minus Mono
+
+multi1_a1v1_iBxM_nonmono_A_V,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__probe_is_mono_fac::avShortAa1v1,Nonmono","d_interact::block_condition__probe_is_mono_fac::avShortVa1v1,Nonmono",Nonmono A - V
+multi1_a1v1_iBxM_nonmono_A_V,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__probe_is_mono_fac::avShortAa1v1,Mono","d_interact::block_condition__probe_is_mono_fac::avShortVa1v1,Mono",Mono A - V
+
+multi1_a1v1_B_bias,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,bias_maineff::block_condition::avShortAa1v1,bias_maineff::block_condition::avShortVa1v1,Difference between modalities (A - V) for bias
+multi1_a1v1_S_bias_sync_async,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,bias_maineff::stream_type::sync,bias_maineff::stream_type::async,Difference sync - async for bias
+multi1_a1v1_S_bias_sync_uni,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,bias_maineff::stream_type::sync,bias_maineff::stream_type::unimodal,Difference sync - unimodal for bias
+multi1_a1v1_S_bias_async_uni,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,bias_maineff::stream_type::async,bias_maineff::stream_type::unimodal,Difference async - unimodal for bias
+multi1_a1v1_M_bias,NoBadTrials,multi1_a1v1,mlefit_multi1_a1v1_mDBSMiBxSiBxM,bias_maineff::probe_is_mono_fac::Nonmono,bias_maineff::probe_is_mono_fac::Mono,Difference between mono (nonmono - mono) for bias
+
+
+multi2_a1v1_dprime,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,,,
+multi2_a1v1_iBxS_A_sync_async,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortAa1v1,sync","d_interact::block_condition__stream_type::avShortAa1v1,async",Aud sync minus async
+multi2_a1v1_iBxS_A_sync_uni,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortAa1v1,sync","d_interact::block_condition__stream_type::avShortAa1v1,unimodal",Aud sync minus uni
+multi2_a1v1_iBxS_A_sync_uni,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortAa1v1,async","d_interact::block_condition__stream_type::avShortAa1v1,unimodal",Aud async minus uni
+multi2_a1v1_iBxS_V_sync_async,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortVa1v1,sync","d_interact::block_condition__stream_type::avShortVa1v1,async",Vis sync minus async
+multi2_a1v1_iBxS_V_sync_uni,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortVa1v1,sync","d_interact::block_condition__stream_type::avShortVa1v1,unimodal",Vis sync minus uni
+multi2_a1v1_iBxS_V_sync_uni,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortVa1v1,async","d_interact::block_condition__stream_type::avShortVa1v1,unimodal",Vis async minus uni
+multi2_a1v1_iBxS_AV_async,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortAa1v1,async","d_interact::block_condition__stream_type::avShortVa1v1,async",async A - V
+multi2_a1v1_iBxS_AV_sync,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortAa1v1,sync","d_interact::block_condition__stream_type::avShortVa1v1,sync",sync A - V
+multi2_a1v1_iBxS_AV_uni,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__stream_type::avShortAa1v1,unimodal","d_interact::block_condition__stream_type::avShortVa1v1,unimodal",unimodal A - V
+
+multi2_a1v1_iBxM_A_nonmono_mono,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__probe_is_mono_fac::avShortAa1v1,Nonmono","d_interact::block_condition__probe_is_mono_fac::avShortAa1v1,Mono",Aud Nonmono minus Mono
+multi2_a1v1_iBxM_V_nonmono_mono,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__probe_is_mono_fac::avShortVa1v1,Nonmono","d_interact::block_condition__probe_is_mono_fac::avShortVa1v1,Mono",Vis Nonmono minus Mono
+
+multi2_a1v1_iBxM_nonmono_A_V,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__probe_is_mono_fac::avShortAa1v1,Nonmono","d_interact::block_condition__probe_is_mono_fac::avShortVa1v1,Nonmono",Nonmono A - V
+multi2_a1v1_iBxM_nonmono_A_V,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,"d_interact::block_condition__probe_is_mono_fac::avShortAa1v1,Mono","d_interact::block_condition__probe_is_mono_fac::avShortVa1v1,Mono",Mono A - V
+
+multi2_a1v1_B_bias,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,bias_maineff::block_condition::avShortAa1v1,bias_maineff::block_condition::avShortVa1v1,Difference between modalities (A - V) for bias
+multi2_a1v1_S_bias_sync_async,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,bias_maineff::stream_type::sync,bias_maineff::stream_type::async,Difference sync - async for bias
+multi2_a1v1_S_bias_sync_uni,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,bias_maineff::stream_type::sync,bias_maineff::stream_type::unimodal,Difference sync - unimodal for bias
+multi2_a1v1_S_bias_async_uni,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,bias_maineff::stream_type::async,bias_maineff::stream_type::unimodal,Difference async - unimodal for bias
+multi2_a1v1_M_bias,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMiBxSiBxM,bias_maineff::probe_is_mono_fac::Nonmono,bias_maineff::probe_is_mono_fac::Mono,Difference between mono (nonmono - mono) for bias
+
+multi2_a2v2_dprime,NoBadTrials,multi2_a2v2,mlefit_multi2_a2v2_mDSM,,,
+
+multi2_a2v2_S_bias_sync_async,NoBadTrials,multi2_a2v2,mlefit_multi2_a2v2_mDSM,bias_maineff::stream_type::sync,bias_maineff::stream_type::async,Difference sync - async for bias
+multi2_a2v2_S_bias_sync_uni,NoBadTrials,multi2_a2v2,mlefit_multi2_a2v2_mDSM,bias_maineff::stream_type::sync,bias_maineff::stream_type::unimodal,Difference sync - unimodal for bias
+multi2_a2v2_S_bias_async_uni,NoBadTrials,multi2_a2v2,mlefit_multi2_a2v2_mDSM,bias_maineff::stream_type::async,bias_maineff::stream_type::unimodal,Difference async - unimodal for bias
+multi2_a2v2_M_bias,NoBadTrials,multi2_a2v2,mlefit_multi2_a2v2_mDSM,bias_maineff::probe_is_mono_fac::Nonmono,bias_maineff::probe_is_mono_fac::Mono,Difference between mono (nonmono - mono) for bias
+
+uni_a1v1_upright_B_bias,NoBadTrials,uni_a1v1_upright,mlefit_uni_a1v1_upright_mDBNM,bias_maineff::block_condition::a1freq,bias_maineff::block_condition::v1size,Difference between modalities (A - V) for bias
+uni_a1v1_upright_M_bias,NoBadTrials,uni_a1v1_upright,mlefit_uni_a1v1_upright_mDBNM,bias_maineff::probe_is_mono_fac::Nonmono,bias_maineff::probe_is_mono_fac::Mono,Difference between mono (nonmono - mono) for bias
+
+uni_a1v1_rev1_iBxN_1,NoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mDBNMiBxN,"d_interact::block_condition__nstim_fac::a1freq,1","d_interact::block_condition__nstim_fac::v1size,1",Difference between modalities (A - V) at list length 1
+uni_a1v1_rev1_iBxN_2,NoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mDBNMiBxN,"d_interact::block_condition__nstim_fac::a1freq,2","d_interact::block_condition__nstim_fac::v1size,2",Difference between modalities (A - V) at list length 2
+uni_a1v1_rev1_iBxN_4,NoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mDBNMiBxN,"d_interact::block_condition__nstim_fac::a1freq,4","d_interact::block_condition__nstim_fac::v1size,4",Difference between modalities (A - V) at list length 4
+uni_a1v1_rev1_B_bias,NoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mDBNMiBxN,bias_maineff::block_condition::a1freq,bias_maineff::block_condition::v1size,Difference between modalities (A - V) for bias
+uni_a1v1_rev1_M_bias,NoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mDBNMiBxN,bias_maineff::probe_is_mono_fac::Nonmono,bias_maineff::probe_is_mono_fac::Mono,Difference between mono (nonmono - mono) for bias
+uni_a1v1_iden_iBxN_1,NoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mDBNMiBxN,"d_interact::block_condition__nstim_fac::a1freq,1","d_interact::block_condition__nstim_fac::v1size,1",Difference between modalities (A - V) at list length 1
+uni_a1v1_iden_iBxN_2,NoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mDBNMiBxN,"d_interact::block_condition__nstim_fac::a1freq,2","d_interact::block_condition__nstim_fac::v1size,2",Difference between modalities (A - V) at list length 2
+uni_a1v1_iden_iBxN_4,NoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mDBNMiBxN,"d_interact::block_condition__nstim_fac::a1freq,4","d_interact::block_condition__nstim_fac::v1size,4",Difference between modalities (A - V) at list length 4
+uni_a1v1_iden_B_bias,NoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mDBNMiBxN,bias_maineff::block_condition::a1freq,bias_maineff::block_condition::v1size,Difference between modalities (A - V) for bias
+uni_a1v1_iden_M_bias,NoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mDBNMiBxN,bias_maineff::probe_is_mono_fac::Nonmono,bias_maineff::probe_is_mono_fac::Mono,Difference between mono (nonmono - mono) for bias
+
+uni_a2v2_B_bias,NoBadTrials,uni_a2v2,mlefit_uni_a2v2_mDBNM,bias_maineff::block_condition::a2gain,bias_maineff::block_condition::v2freq,Difference between modalities (A - V) for bias
+uni_a2v2_M_bias,NoBadTrials,uni_a2v2,mlefit_uni_a2v2_mDBNM,bias_maineff::probe_is_mono_fac::Nonmono,bias_maineff::probe_is_mono_fac::Mono,Difference between mono (nonmono - mono) for bias
+
+uni_a1v1_combined_dprime,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPiBxNiBxP,,,
+uni_a1v1_combined_iBxN_1,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPiBxNiBxP,"d_interact::block_condition__nstim_fac::a1freq,1","d_interact::block_condition__nstim_fac::v1size,1",Difference between modalities (A - V) at list length 1
+uni_a1v1_combined_iBxN_2,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPiBxNiBxP,"d_interact::block_condition__nstim_fac::a1freq,2","d_interact::block_condition__nstim_fac::v1size,2",Difference between modalities (A - V) at list length 2
+uni_a1v1_combined_iBxN_4,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPiBxNiBxP,"d_interact::block_condition__nstim_fac::a1freq,4","d_interact::block_condition__nstim_fac::v1size,4",Difference between modalities (A - V) at list length 4
+
+uni_a1v1_combined_iBxP_A,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPiBxNiBxP,"d_interact::block_condition__probe_transform::a1freq,Identical","d_interact::block_condition__probe_transform::a1freq,Transformed",Difference in AUD for Iden - Transformed
+uni_a1v1_combined_iBxP_V,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPiBxNiBxP,"d_interact::block_condition__probe_transform::v1size,Identical","d_interact::block_condition__probe_transform::v1size,Transformed",Difference in VIS for Iden - Transformed
+uni_a1v1_combined_iBxP_Iden,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPiBxNiBxP,"d_interact::block_condition__probe_transform::a1freq,Identical","d_interact::block_condition__probe_transform::v1size,Identical",Difference in Iden for A - V
+uni_a1v1_combined_iBxP_Tran,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPiBxNiBxP,"d_interact::block_condition__probe_transform::a1freq,Transformed","d_interact::block_condition__probe_transform::v1size,Transformed",Difference in Transformed for A - V
+
+uni_a1v1_combined_B_bias,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPiBxNiBxP,bias_maineff::block_condition::a1freq,bias_maineff::block_condition::v1size,Difference between modalities (A - V) for bias
+uni_a1v1_combined_M_bias,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPiBxNiBxP,bias_maineff::probe_is_mono_fac::Nonmono,bias_maineff::probe_is_mono_fac::Mono,Difference between mono (nonmono - mono) for bias
+uni_a1v1_combined_P_bias,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPiBxNiBxP,bias_maineff::probe_transform::Identical,bias_maineff::probe_transform::Transformed,Difference between probe transpose (iden - tran) for bias
+
+acuity_2ifcexp1_crossmodal_bias,Acuity,acuity_2ifcexp1,mlefit_acuity_2ifcexp1_mTF,bias_maineff::block_first_stim::Crossmodal A V,bias_maineff::block_first_stim::Crossmodal V A,Difference crossmodal AV minus VA for bias
+
+acuity_2ifcexp2_crossmodal_bias,Acuity,acuity_2ifcexp2,mlefit_acuity_2ifcexp2_mTF,bias_maineff::block_first_stim::Crossmodal A V,bias_maineff::block_first_stim::Crossmodal V A,Difference crossmodal AV minus VA for bias
+
+
+acuity_iden1_crossmodal_bias,Acuity,acuity_iden1,mlefit_acuity_iden1_mTF,bias_maineff::block_first_stim::Crossmodal A V,bias_maineff::block_first_stim::Crossmodal V A,Difference crossmodal AV minus VA for bias
+acuity_iden1_B_bias,Acuity,acuity_iden1,mlefit_acuity_iden1_mTF,bias_maineff::block_first_stim::Auditory,bias_maineff::block_first_stim::Visual,Difference unimodal A minus V for bias
+
+
+acuity_withinshape1_FxP_bias_A,Acuity,acuity_withinshape1,mlefit_acuity_withinshape1_mTFPiFxTiFxP,"bias_maineff::c_grp::Auditory,Identical","bias_maineff::c_grp::Auditory,Transformed",Difference unimodal AUD Iden - Tran bias
+acuity_withinshape1_FxP_bias_V,Acuity,acuity_withinshape1,mlefit_acuity_withinshape1_mTFPiFxTiFxP,"bias_maineff::c_grp::Visual,Identical","bias_maineff::c_grp::Visual,Transformed",Difference unimodal VIS Iden - Tran bias
+
+acuity_withinshape1_FxP_bias_Iden,Acuity,acuity_withinshape1,mlefit_acuity_withinshape1_mTFPiFxTiFxP,"bias_maineff::c_grp::Auditory,Identical","bias_maineff::c_grp::Visual,Identical",Difference unimodal Iden A - V bias
+acuity_withinshape1_FxP_bias_Tran,Acuity,acuity_withinshape1,mlefit_acuity_withinshape1_mTFPiFxTiFxP,"bias_maineff::c_grp::Auditory,Transformed","bias_maineff::c_grp::Visual,Transformed",Difference unimodal Tran A - V bias
+
+acuity_withinshape1_FxP_A,Acuity,acuity_withinshape1,mlefit_acuity_withinshape1_mTFPiFxTiFxP,"d_interact::block_first_stim__probe_transform::Auditory,Identical","d_interact::block_first_stim__probe_transform::Auditory,Transformed",Difference in AUD for Iden - Transformed
+acuity_withinshape1_FxP_V,Acuity,acuity_withinshape1,mlefit_acuity_withinshape1_mTFPiFxTiFxP,"d_interact::block_first_stim__probe_transform::Visual,Identical","d_interact::block_first_stim__probe_transform::Visual,Transformed",Difference in VIS for Iden - Transformed
+
+acuity_withinshape1_FxP_Iden,Acuity,acuity_withinshape1,mlefit_acuity_withinshape1_mTFPiFxTiFxP,"d_interact::block_first_stim__probe_transform::Auditory,Identical","d_interact::block_first_stim__probe_transform::Visual,Identical",Difference in Iden for A - V
+acuity_withinshape1_FxP_Tran,Acuity,acuity_withinshape1,mlefit_acuity_withinshape1_mTFPiFxTiFxP,"d_interact::block_first_stim__probe_transform::Auditory,Transformed","d_interact::block_first_stim__probe_transform::Visual,Transformed",Difference in Tran for A - V
+
+acuity_withinshape1_FxP_crossmodal_bias,Acuity,acuity_withinshape1,mlefit_acuity_withinshape1_mTFPiFxTiFxP,bias_maineff::block_first_stim::Crossmodal A V,bias_maineff::block_first_stim::Crossmodal V A,Difference crossmodal AV minus VA for bias
+
+uni_a1v1_upright_recency_main,NoBadTrials,uni_a1v1_upright,mlefit_uni_a1v1_upright_mDBNMRiNxR,"maineff::acc::__recency_fac__Last pos","maineff::acc::__recency_fac__Other pos",Recency difference Last minus Other
+uni_a1v1_upright_recency_NxR_2,NoBadTrials,uni_a1v1_upright,mlefit_uni_a1v1_upright_mDBNMRiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Last pos","maineff::acc::__nstim_fac_recency_fac__2__Other pos",Recency difference at LL2 Last minus Other
+uni_a1v1_upright_recency_NxR_4,NoBadTrials,uni_a1v1_upright,mlefit_uni_a1v1_upright_mDBNMRiNxR,"maineff::acc::__nstim_fac_recency_fac__4__Last pos","maineff::acc::__nstim_fac_recency_fac__4__Other pos",Recency difference at LL4 Last minus Other
+uni_a1v1_upright_recency_NxR_Last,NoBadTrials,uni_a1v1_upright,mlefit_uni_a1v1_upright_mDBNMRiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Last pos","maineff::acc::__nstim_fac_recency_fac__4__Last pos",Recency difference Last 2 minus 4
+uni_a1v1_upright_recency_NxR_Other,NoBadTrials,uni_a1v1_upright,mlefit_uni_a1v1_upright_mDBNMRiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Other pos","maineff::acc::__nstim_fac_recency_fac__4__Other pos",Recency difference Other 2 minus 4
+
+uni_a1v1_rev1_recency_main,NoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mDBNMRiBxNiNxR,"maineff::acc::__recency_fac__Last pos","maineff::acc::__recency_fac__Other pos",Recency difference Last minus Other
+uni_a1v1_rev1_recency_NxR_2,NoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mDBNMRiBxNiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Last pos","maineff::acc::__nstim_fac_recency_fac__2__Other pos",Recency difference at LL2 Last minus Other
+uni_a1v1_rev1_recency_NxR_4,NoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mDBNMRiBxNiNxR,"maineff::acc::__nstim_fac_recency_fac__4__Last pos","maineff::acc::__nstim_fac_recency_fac__4__Other pos",Recency difference at LL4 Last minus Other
+uni_a1v1_rev1_recency_NxR_Last,NoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mDBNMRiBxNiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Last pos","maineff::acc::__nstim_fac_recency_fac__4__Last pos",Recency difference Last 2 minus 4
+uni_a1v1_rev1_recency_NxR_Other,NoBadTrials,uni_a1v1_rev1,mlefit_uni_a1v1_rev1_mDBNMRiBxNiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Other pos","maineff::acc::__nstim_fac_recency_fac__4__Other pos",Recency difference Other 2 minus 4
+
+uni_a1v1_iden_recency_main,NoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mDBNMRiBxNiNxR,"maineff::acc::__recency_fac__Last pos","maineff::acc::__recency_fac__Other pos",Recency difference Last minus Other
+uni_a1v1_iden_recency_NxR_2,NoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mDBNMRiBxNiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Last pos","maineff::acc::__nstim_fac_recency_fac__2__Other pos",Recency difference at LL2 Last minus Other
+uni_a1v1_iden_recency_NxR_4,NoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mDBNMRiBxNiNxR,"maineff::acc::__nstim_fac_recency_fac__4__Last pos","maineff::acc::__nstim_fac_recency_fac__4__Other pos",Recency difference at LL4 Last minus Other
+uni_a1v1_iden_recency_NxR_Last,NoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mDBNMRiBxNiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Last pos","maineff::acc::__nstim_fac_recency_fac__4__Last pos",Recency difference Last 2 minus 4
+uni_a1v1_iden_recency_NxR_Other,NoBadTrials,uni_a1v1_iden,mlefit_uni_a1v1_iden_mDBNMRiBxNiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Other pos","maineff::acc::__nstim_fac_recency_fac__4__Other pos",Recency difference Other 2 minus 4
+
+uni_a1v1_combined_recency_main,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPRiBxNiBxPiNxR,"maineff::acc::__recency_fac__Last pos","maineff::acc::__recency_fac__Other pos",Recency difference Last minus Other
+uni_a1v1_combined_recency_NxR_2,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPRiBxNiBxPiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Last pos","maineff::acc::__nstim_fac_recency_fac__2__Other pos",Recency difference at LL2 Last minus Other
+uni_a1v1_combined_recency_NxR_4,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPRiBxNiBxPiNxR,"maineff::acc::__nstim_fac_recency_fac__4__Last pos","maineff::acc::__nstim_fac_recency_fac__4__Other pos",Recency difference at LL4 Last minus Other
+uni_a1v1_combined_recency_NxR_Last,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPRiBxNiBxPiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Last pos","maineff::acc::__nstim_fac_recency_fac__4__Last pos",Recency difference Last 2 minus 4
+uni_a1v1_combined_recency_NxR_Other,NoBadTrials,uni_a1v1_combined,mlefit_uni_a1v1_combined_mDBNMPRiBxNiBxPiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Other pos","maineff::acc::__nstim_fac_recency_fac__4__Other pos",Recency difference Other 2 minus 4
+
+uni_a2v2_recency_main,NoBadTrials,uni_a2v2,mlefit_uni_a2v2_mDBNMRiNxR,"maineff::acc::__recency_fac__Last pos","maineff::acc::__recency_fac__Other pos",Recency difference Last minus Other
+uni_a2v2_recency_NxR_2,NoBadTrials,uni_a2v2,mlefit_uni_a2v2_mDBNMRiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Last pos","maineff::acc::__nstim_fac_recency_fac__2__Other pos",Recency difference at LL2 Last minus Other
+uni_a2v2_recency_NxR_4,NoBadTrials,uni_a2v2,mlefit_uni_a2v2_mDBNMRiNxR,"maineff::acc::__nstim_fac_recency_fac__4__Last pos","maineff::acc::__nstim_fac_recency_fac__4__Other pos",Recency difference at LL4 Last minus Other
+uni_a2v2_recency_NxR_Last,NoBadTrials,uni_a2v2,mlefit_uni_a2v2_mDBNMRiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Last pos","maineff::acc::__nstim_fac_recency_fac__4__Last pos",Recency difference Last 2 minus 4
+uni_a2v2_recency_NxR_Other,NoBadTrials,uni_a2v2,mlefit_uni_a2v2_mDBNMRiNxR,"maineff::acc::__nstim_fac_recency_fac__2__Other pos","maineff::acc::__nstim_fac_recency_fac__4__Other pos",Recency difference Other 2 minus 4
+
+multi2_a1v1_recency,NoBadTrials,multi2_a1v1,mlefit_multi2_a1v1_mDBSMRiBxSiBxM,"maineff::acc::__recency_fac__Last pos","maineff::acc::__recency_fac__Other pos",Recency difference Last minus Other
+multi2_a2v2_recency,NoBadTrials,multi2_a2v2,mlefit_multi2_a2v2_mDSMR,"maineff::acc::__recency_fac__Last pos","maineff::acc::__recency_fac__Other pos",Recency difference Last minus Other
+

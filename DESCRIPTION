@@ -1,0 +1,12 @@
+Package: dynmodpat
+Title: Reproduce analyses for Rector dynmod dissertation experiments
+Version: 0.0.0.9007
+Authors@R: person("Jeff", "Rector", email = "jrector@mortville.com", role = c("aut", "cre"))
+Description: Provides scripts and data to reproduce the analysis reported in Jeff Rector's dissertation.
+Depends: R (>= 3.3.1)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr

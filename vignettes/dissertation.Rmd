@@ -1,0 +1,116 @@
+---
+title: "Quick Guide"
+author: "Jeff Rector"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Quick Guide}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Quick Guide to the Analysis Code
+
+Usage of the analysis code will be illustrated with some simple examples and descriptions of the functions.
+
+In the following examples, we will assume you have an object in your workspace named `wm_trials`. This is a list of data frames, where each data frame contains trial-level data.
+
+```{r}
+# wm_trials is a list of data frames
+typeof(wm_trials)
+sapply(wm_trials, class)
+
+# each data frame has an experiment name or other analysis identifier
+# associated with it
+names(wm_trials)
+```
+
+The top-level function that starts off an analysis is `process_experiments()`. This will produce a full analysis of the requested experiment data. The function returns a list of analyses, one for each of the supplied experiment identifers. It also produces several output files on disk, including cache files containing analysis results, summary reports, and plots.
+
+```{r, eval=FALSE}
+fits <- process_experiments(experiment_stubs = names(wm_trials),
+                             data_by_stub = wm_trials,
+                             project_root = getwd(),
+                             filter_f = filter_no_bad_trials,
+                             analysis_prefix = "NoBadTrials",
+                             fit_mle = TRUE
+                             )
+```
+
+Key parameters:
+
+* `experiment_stubs`: vector of experiment identifiers to process. In the example above, all of the identifiers provided in `wm_trials` will be processed.
+* `data_by_stub`: list of data frames, where the name of each data frame corresponds to an experiment identifier
+* `project_root`: directory to use
+* `filter_f`: optional filtering function used to subset the data
+* `analysis_prefix`: string used to name the analysis. Output files such as plots and reports will include this analysis identifier in their names.
+* `fit_mle`: logical indicating whether models should be fit with Maximum Likelihood. This is true by default. Earlier versions of this code also supported fitting Bayesian models using Stan, but this has been removed from the current version for simplicity.
+
+In the example above, an analysis will be performed that processes all of the data frames available in `wm_trials`. In the dissertation, I filtered out any trial that was marked as a "bad trial" by the experimenter. The example above reflects this filtering. We name the analysis "NoBadTrials" and pass in a filtering function that drops any trials that were flagged.
+
+```{r, eval=FALSE, echo=FALSE}
+filter_no_bad_trials
+```
+
+## Analysis of an experiment
+
+The `fit_model_sequence()` function takes the data from an experiment and performs a series of steps to fit any relevant models to the data. This is a very large function that includes an explicit listing of each model to consider. The model list could be abstracted out, but I left it here to clearly capture the list of candidate models that were considered for the dissertation analysis.
+
+The general process is that first a base model is fit that includes any predictors that will be present in all subsequent models. A sequence of candidate models are then considered. Some logic is included here to determine whether a particular candidate model is appropriate for the supplied data set. For example, some of the models contain a predictor named `block_condition`. This predictor indicates whether the relevant modality for the trial is audition or vision. If the data includes trials with different values for `block_condition`, then candidates models containing this predictor are considered. If the data set contained only one value for `block_condition`, then any models with this predictor are excluded. This type of logic is used to determine which models will be fit to the supplied experiment data. 
+
+The various predictors have been assigned abbreviations, and I have included a simple domain specific language to specify models using these abbreviations. Here are the first few rows of the data frame that defines the various predictor values.
+
+```{r, echo=FALSE, results='asis'}
+knitr::kable(head(PREDICTOR_INFO()))
+```
+
+You can see from this table that the `block_condition` predictor has abbreviation "B" and that in reports, it will be listed as "Modality" (i.e. the "friendly_name"). The language to specify models can be illustrated with an example:
+
+```{r, eval=FALSE}
+fit_info <- func_fit_abbrev(
+  model_abbrev="BNMiBxN", model_flags=(incl_B & incl_N & incl_M)
+  )
+```
+
+In that example, we pass in logical flags to indicate that this model should only be fit if the predictors with abbreviations B, N, and M are relevant. Here the model abbreviation is "BNMiBxN". This describes a model with main effects for the B, N, and M predictors, and a 2-way interaction ("iBxN") between the B and N predictors.
+
+The model abbreviation string can be expanded into a string of predictors in syntax suitable for `lme4::glmer`. I won't go in to the details here (see Appendix A of the dissertation), but the models are parameterized for Signal Detection Theory. They require a predictor that separates signal and noise trials, which I refer to as the "signal variable". In the example below, the signal variable is "is_old".
+
+```{r}
+
+model_abbrev <- "BNMiBxN"
+signal_var <- "is_old"
+# build formula string with the predictors to append to base model
+build_formula_suffix_from_abbrev(abbrev_str=model_abbrev, signal_var=signal_var)
+
+# additional examples
+build_formula_suffix_from_abbrev(abbrev_str="BSN", signal_var=signal_var)
+build_formula_suffix_from_abbrev(abbrev_str="BSNiBxNiBxS", signal_var="x")
+
+```
+
+The resulting formula string can be added to the formula string for the base model. This process is used to build new models from the base model.
+
+```{r, eval=FALSE}
+# build complete formula string
+formula_str <- append_formula_from_abbrev(existing_fit=base_fit, formula_suffix=formula_suffix)
+```
+
+### Analysis output
+
+The output of the analysis is stored in subdirectories of the `project_root`. A "cache" directory contains RDS files with all of the fitted models and output from a routine that bootstraps confidence intervals for selected models. The "reports" directory contains text files with various summary reports, and the "plots" directory contains PDF files of various summary figures. The specific plots to produce can be specified with a CSV file (an example will be included in a future release).
+
+## Conclusion
+
+This quick guide just scratches the surface of the analysis pipeline, but hopefully provides a starting point to explore the code.
+
+### Note about the experiment data
+
+The initial public release of this R package contains the minimal set of data necessary to reproduce the reported analyses.
